@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat'
+}
+
+body {
+    background-color: #676FE4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 160px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.main {
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 275px;
+    background-color: #f6f3ff;
+    padding: 62px 0 62px 0;
+}
+
+.modal h1 {
+    height: 23px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #676FE4;
+    margin: 0 0 32px 0;
+}
+
+.suscripciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.network {
+    display: flex;
+    margin: 0 0 32px 0;
+}
+
+.network p {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #565656;
+    margin: 0 16px 0 0;
+}
+
+.network input {
+    height: 32px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    padding: 0 0 0 16px;
+}
+
+.network input:focus {
+    outline:none;
+}
+
+.network input:focus::placeholder {
+    color: transparent;
+}
+
+.email {
+    display: flex;
+}
+
+.email p {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #565656;
+    margin: 0 16px 0 0;
+}
+
+.email input {
+    height: 32px;
+    width: 356px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    margin: 0 16px 0 0;
+    padding: 0 0 0 16px;
+}
+
+.email input:focus {
+    outline:none;
+}
+
+.email input:focus::placeholder {
+    color: transparent;
+}
+
+.email button {
+    width: 117px;
+    height:  32px;
+    background-color: #676FE4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.footer p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #c4c4c4;
+}
+
+.footer p:nth-child(1) {
+    margin: 0 0 0 160px;
+}
+
+.footer p:nth-child(2) {
+    margin: 0 160px 0 0;
+}
