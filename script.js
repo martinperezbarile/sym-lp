@@ -10,8 +10,8 @@ dataForm.addEventListener('submit', (e) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      "Network element": "Ejemplo de network",
-      "Email": "Ejemplo de email" 
+      "Network element": dataForm.network.value,
+      "Email": dataForm.email.value
     })
   });
 });
