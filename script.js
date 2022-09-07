@@ -3,7 +3,10 @@ const form = document.forms['suscrip']
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      console.log('Success!', response);
+      form.reset();
+    })
     .catch(error => console.error('Error!', error.message))
 })
