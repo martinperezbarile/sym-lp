@@ -56,12 +56,12 @@ body {
     flex-direction: column;
 }
 
-.network {
+.networkDiv {
     display: flex;
     margin: 0 0 32px 0;
 }
 
-.network p {
+.networkDiv p {
     display: flex;
     align-items: center;
     height: 32px;
@@ -71,7 +71,7 @@ body {
     margin: 0 16px 0 0;
 }
 
-.network input {
+.networkDiv input {
     height: 32px;
     width: 300px;
     background-color: #ffffff;
@@ -80,19 +80,19 @@ body {
     padding: 0 0 0 16px;
 }
 
-.network input:focus {
+.networkDiv input:focus {
     outline:none;
 }
 
-.network input:focus::placeholder {
+.networkDiv input:focus::placeholder {
     color: transparent;
 }
 
-.email {
+.emailDiv {
     display: flex;
 }
 
-.email p {
+.emailDiv p {
     display: flex;
     align-items: center;
     height: 32px;
@@ -102,7 +102,7 @@ body {
     margin: 0 16px 0 0;
 }
 
-.email input {
+.emailDiv input {
     height: 32px;
     width: 356px;
     background-color: #ffffff;
@@ -112,15 +112,15 @@ body {
     padding: 0 0 0 16px;
 }
 
-.email input:focus {
+.emailDiv input:focus {
     outline:none;
 }
 
-.email input:focus::placeholder {
+.emailDiv input:focus::placeholder {
     color: transparent;
 }
 
-.email button {
+.emailDiv button {
     width: 117px;
     height:  32px;
     background-color: #676FE4;
