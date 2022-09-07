@@ -1,17 +1,11 @@
-const formulario = document.getElementById('formulario');
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyY6ey92XhEOdyQjIYnv0oUQUgD4HUnswSOfH3-OcOlbfezG3I/exec'
+const form = document.forms['suscrip']
 
-formulario.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
 
-  fetch('https://sheet.best/api/sheets/2fb982d7-fbd1-4f9c-a605-00ba9d21450a', {
-    method: 'POST',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      "Network": "Ejemplo network",
-      "Email": "Ejemplo email"
-    })
-  });
-});
+
